@@ -16,22 +16,11 @@ inside the docs folder.
 
 ## Installation
 
-See docs/en/Installing.md
+See <a href="docs/en/Installing.md">docs/en/Installing.md</a>
 
-## Related
+## Reference
+i got the idea to create contactform on sidebar, from the below 
+thanks to wilr ( https://github.com/wilr )
+https://github.com/silverstripe/silverstripe-comments
+https://github.com/dnadesign/silverstripe-menumanager	
 
- * [tractorcow/silverstripe-comments-notifications](https://github.com/tractorcow/silverstripe-comments-notifications): Comment admin email notifications module
-
-## Contributing
-
-### Translations
-
-Translations of the natural language strings are managed through a
-third party translation interface, transifex.com.
-Newly added strings will be periodically uploaded there for translation,
-and any new translations will be merged back to the project source code.
-
-Please use https://www.transifex.com/projects/p/silverstripe-comments/ to contribute translations,
-rather than sending pull requests with YAML files.
-
-See the ["i18n" topic](http://doc.silverstripe.org/framework/en/trunk/topics/i18n) on doc.silverstripe.org for more details.
