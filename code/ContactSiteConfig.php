@@ -17,7 +17,7 @@ class ContactSiteConfig extends DataExtension {
 	  new TextField("MailTo", _t('ContactSiteConfig.MAIL_TO', "Recipient email")));
         $fields->addFieldToTab(
 	  "Root.Email", 
-	  new HTMLEditorField('SubmitText',_t('ContactSiteConfig.SUBMIT_TEXT','Success message (to be displayed after a user submits the form')));
+	  new HTMLEditorField('SubmitText',_t('ContactSiteConfig.SUBMIT_TEXT','Message to be displayed after a user submits the form')));
 
     }
 	

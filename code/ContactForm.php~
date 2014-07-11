@@ -37,10 +37,6 @@ class ContactForm extends Form{
 		'Email',
 		'Comment'
 	));
-
-	// create the comment form
-	//$form = new Form($this, 'ContactForm', $fields, $actions, $required);
-	//$form->setAttribute('novalidate','novalidate');
 	
 	$this->setAttribute('novalidate','novalidate');
 
@@ -49,7 +45,7 @@ class ContactForm extends Form{
 	
     
          
-        parent::__construct($controller, $name, $fields, $actions);
+        parent::__construct($controller, $name, $fields, $actions, $required);
     }
     
     	/**

@@ -37,10 +37,6 @@ class ContactForm extends Form{
 		'Email',
 		'Comment'
 	));
-
-	// create the comment form
-	//$form = new Form($this, 'ContactForm', $fields, $actions, $required);
-	//$form->setAttribute('novalidate','novalidate');
 	
 	$this->setAttribute('novalidate','novalidate');
 

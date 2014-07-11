@@ -13,10 +13,10 @@ class ContactSiteConfig extends DataExtension {
  
     public function updateCMSFields(FieldList $fields) {
         $fields->addFieldToTab(
-	  "Root.Main.Email",
+	  "Root.Email",
 	  new TextField("MailTo", _t('ContactSiteConfig.MAIL_TO', "Recipient email")));
         $fields->addFieldToTab(
-	  "Root.Main.Email", 
+	  "Root.Email", 
 	  new HTMLEditorField('SubmitText',_t('ContactSiteConfig.SUBMIT_TEXT','Success message (to be displayed after a user submits the form')));
 
     }
