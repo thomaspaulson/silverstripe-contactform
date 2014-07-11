@@ -16,7 +16,7 @@ inside the docs folder.
 
 ## Installation
 
-See <a href="docs/en/Installing.md">docs/en/Installing.md</a>
+See <a href="docs/en/Installing">docs/en/Installing</a>
 
 ## Reference
 i got the idea to create contactform on sidebar, from the below 
