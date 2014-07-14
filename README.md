@@ -16,7 +16,7 @@ inside the docs folder.
 
 ## Installation
 
-See <a href="tree/master/docs/en/Installing">docs/en/Installing</a>
+See docs/en/Installing
 
 ## Reference
 i got the idea to create contactform on sidebar, from the below 
