@@ -1,0 +1,18 @@
+	{
+	  "name": "thomaspaulson/sliverstripe-contactform",
+	  "description": "silvrestripe contract form on sidebar",
+	  "type": "silverstripe-module",
+	  "homepage": "https://github.com/thomaspaulson/silverstripe-contactform",
+	  "keywords": ["silverstripe", "contact-fom", "sidebar"],
+	  "license": "BSD-3-Clause",
+	  "authors": [
+	    {"name": "thomas paulson","email": "thomas.paulson@hotmail.com"}
+	  ],
+	  "support": {
+	    "issues": "https://github.com/thomaspaulson/silverstripe-contactform/issues"
+	  },
+	  "require": {
+	    "silverstripe/cms": "~3.0",
+	    "silverstripe/framework": "~3.0"
+	  },
+	}	
