@@ -3,7 +3,7 @@
 	  "description": "silvrestripe contract form on sidebar",
 	  "type": "silverstripe-module",
 	  "homepage": "https://github.com/thomaspaulson/silverstripe-contactform",
-	  "keywords": ["silverstripe", "contact-fom", "sidebar"],
+	  "keywords": ["silverstripe", "contact-form", "sidebar"],
 	  "license": "BSD-3-Clause",
 	  "authors": [
 	    {"name": "thomas paulson","email": "thomas.paulson@hotmail.com"}
