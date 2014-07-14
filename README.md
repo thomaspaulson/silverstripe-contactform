@@ -1,6 +1,6 @@
 ## Maintainers
 
- * Thomas Paulson (Nickname: pappan)
+ * Thomas Paulson
   <thomas.paulson at hotmail dot com>
 
 ## Introduction
@@ -20,7 +20,10 @@ See docs/en/Installing
 
 ## Reference
 i got the idea to create contactform on sidebar, from the below 
-thanks to wilr ( https://github.com/wilr )
+
+
 https://github.com/silverstripe/silverstripe-comments
+
 https://github.com/dnadesign/silverstripe-menumanager	
 
+thanks to wilr ( https://github.com/wilr )
