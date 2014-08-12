@@ -16,7 +16,7 @@ inside the docs folder.
 
 ## Installation
 
-# Manual directory placement
+### Manual directory placement
 Place this directory in the root of your SilverStripe installation.
 Make sure it is named 'contact'
 Rebuild your database (see below).
