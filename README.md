@@ -22,9 +22,11 @@ Make sure it is named 'contact'
 Rebuild your database (see below).
 ## Rebuild database
 Visit http://www.yoursite.com/dev/build/ in your browser
-Also flush the cache http://www.yoursite.com/?flush=all in your browser
-Insert $ContactForm placeholder in templates to show the contact form
-happy coding
+
+Insert $ContactForm placeholder in templates to show the contact form, also flush the cache http://www.yoursite.com/?flush=all in your browser
+
+
+
 
 ## Reference
 i got the idea to create contactform on sidebar, from the below 
