@@ -21,7 +21,7 @@ class ContactController extends Controller {
 	public function ContactForm(){
 	
 		$form = new ContactForm($this, 'ContactForm');
-			// we do not want to read a new URL when the form has already been submitted
+		// we do not want to read a new URL when the form has already been submitted
 		// which in here, it hasn't been.
 		$url = (isset($_SERVER['REQUEST_URI'])) ? Director::protocolAndHost() . '' . $_SERVER['REQUEST_URI'] : false;
 		

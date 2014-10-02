@@ -10,6 +10,7 @@ class ContactForm extends Form{
 				->setCustomValidationMessage(_t('ContactForm.YOURNAME_MESSAGE_REQUIRED', 'Please enter your name'))
 				->setAttribute('data-message-required', _t('ContactForm.YOURNAME_MESSAGE_REQUIRED', 'Please enter your name')),
 
+
 			EmailField::create("Email", _t('ContactController.EMAILADDRESS', "Your email address"))
 				->setCustomValidationMessage(_t('ContactForm.EMAILADDRESS_MESSAGE_REQUIRED', 'Please enter your email address'))
 				->setAttribute('data-message-required', _t('ContactForm.EMAILADDRESS_MESSAGE_REQUIRED', 'Please enter your email address'))
@@ -19,7 +20,7 @@ class ContactForm extends Form{
 			TextareaField::create("Comment", _t('ContactController.COMMENTS', "Comments"))
 				->setCustomValidationMessage(_t('ContactForm.COMMENT_MESSAGE_REQUIRED', 'Please enter your comment'))
 					->setAttribute('data-message-required', _t('ContactForm.COMMENT_MESSAGE_REQUIRED', 'Please enter your comment'))
-			),			
+			),						
 			
 			HiddenField::create("ReturnURL")			
 		);
@@ -93,12 +94,10 @@ class ContactForm extends Form{
 		
 	}
 	
-	/*
+	
 	public function forTemplate() {
 	    return $this->renderWith(array($this->class, 'Form'));
-	}
-	*/
-	
+	}	
 		
 	
 	public function SuccessMessage(){
