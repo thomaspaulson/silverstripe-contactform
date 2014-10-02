@@ -1,6 +1,6 @@
 ## Maintainers
 
- * Thomas Paulson (Nickname: pappan)
+ * Thomas Paulson
   <thomas.paulson at hotmail dot com>
 
 ## Introduction
@@ -16,11 +16,24 @@ inside the docs folder.
 
 ## Installation
 
-See <a href="docs/en/Installing">docs/en/Installing</a>
+### Manual directory placement
+Place this directory in the root of your SilverStripe installation.
+Make sure it is named 'contact'
+Rebuild your database (see below).
+## Rebuild database
+Visit http://www.yoursite.com/dev/build/ in your browser
+
+Insert $ContactForm placeholder in templates to show the contact form, also flush the cache http://www.yoursite.com/?flush=all in your browser
+
+
+
 
 ## Reference
 i got the idea to create contactform on sidebar, from the below 
-thanks to wilr ( https://github.com/wilr )
+
+
 https://github.com/silverstripe/silverstripe-comments
+
 https://github.com/dnadesign/silverstripe-menumanager	
 
+thanks to wilr ( https://github.com/wilr )
