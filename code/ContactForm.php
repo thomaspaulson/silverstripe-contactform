@@ -24,7 +24,7 @@ class ContactForm extends Form{
 		HiddenField::create("ReturnURL")			
 	);
 
-	$dataFields->addExtraClass('data-fields');
+	$dataFields->addExtraClass('data-fields');	
 
 	// save actions
 	$actions = new FieldList(
@@ -37,6 +37,7 @@ class ContactForm extends Form{
 		'Email',
 		'Comment'
 	));
+	
 	
 	$this->setAttribute('novalidate','novalidate');
 
@@ -92,9 +93,12 @@ class ContactForm extends Form{
 		
 	}
 	
+	
 	public function forTemplate() {
 	    return $this->renderWith(array($this->class, 'Form'));
-	}	
+	}
+	
+		
 	
 	public function SuccessMessage(){
 	  
