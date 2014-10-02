@@ -4,47 +4,47 @@ class ContactForm extends Form{
 
     public function __construct($controller, $name) {
     
-	$fields = new FieldList(
-		$dataFields = new CompositeField(
-		TextField::create("Name", _t('ContactForm.YOURNAME', 'Your name'))
-			->setCustomValidationMessage(_t('ContactForm.YOURNAME_MESSAGE_REQUIRED', 'Please enter your name'))
-			->setAttribute('data-message-required', _t('ContactForm.YOURNAME_MESSAGE_REQUIRED', 'Please enter your name')),
+		$fields = new FieldList(
+			$dataFields = new CompositeField(
+			TextField::create("Name", _t('ContactForm.YOURNAME', 'Your name'))
+				->setCustomValidationMessage(_t('ContactForm.YOURNAME_MESSAGE_REQUIRED', 'Please enter your name'))
+				->setAttribute('data-message-required', _t('ContactForm.YOURNAME_MESSAGE_REQUIRED', 'Please enter your name')),
 
-		EmailField::create("Email", _t('ContactController.EMAILADDRESS', "Your email address"))
-			->setCustomValidationMessage(_t('ContactForm.EMAILADDRESS_MESSAGE_REQUIRED', 'Please enter your email address'))
-			->setAttribute('data-message-required', _t('ContactForm.EMAILADDRESS_MESSAGE_REQUIRED', 'Please enter your email address'))
-			->setAttribute('data-message-email', _t('ContactForm.EMAILADDRESS_MESSAGE_EMAIL', 'Please enter a valid email address')),
+			EmailField::create("Email", _t('ContactController.EMAILADDRESS', "Your email address"))
+				->setCustomValidationMessage(_t('ContactForm.EMAILADDRESS_MESSAGE_REQUIRED', 'Please enter your email address'))
+				->setAttribute('data-message-required', _t('ContactForm.EMAILADDRESS_MESSAGE_REQUIRED', 'Please enter your email address'))
+				->setAttribute('data-message-email', _t('ContactForm.EMAILADDRESS_MESSAGE_EMAIL', 'Please enter a valid email address')),
 
 
-		TextareaField::create("Comment", _t('ContactController.COMMENTS', "Comments"))
-			->setCustomValidationMessage(_t('ContactForm.COMMENT_MESSAGE_REQUIRED', 'Please enter your comment'))
-				->setAttribute('data-message-required', _t('ContactForm.COMMENT_MESSAGE_REQUIRED', 'Please enter your comment'))
-		),			
+			TextareaField::create("Comment", _t('ContactController.COMMENTS', "Comments"))
+				->setCustomValidationMessage(_t('ContactForm.COMMENT_MESSAGE_REQUIRED', 'Please enter your comment'))
+					->setAttribute('data-message-required', _t('ContactForm.COMMENT_MESSAGE_REQUIRED', 'Please enter your comment'))
+			),			
+			
+			HiddenField::create("ReturnURL")			
+		);
+
+		$dataFields->addExtraClass('data-fields');	
+
+		// save actions
+		$actions = new FieldList(
+			new FormAction("doPostContact", _t('ContactForm.POST', 'Post'))
+		);
 		
-		HiddenField::create("ReturnURL")			
-	);
+		// required fields for server side
+		$required = new RequiredFields(array(
+			'Name',
+			'Email',
+			'Comment'
+		));
+		
+		
+		$this->setAttribute('novalidate','novalidate');
 
-	$dataFields->addExtraClass('data-fields');	
-
-	// save actions
-	$actions = new FieldList(
-		new FormAction("doPostContact", _t('ContactForm.POST', 'Post'))
-	);
-	
-	// required fields for server side
-	$required = new RequiredFields(array(
-		'Name',
-		'Email',
-		'Comment'
-	));
-	
-	
-	$this->setAttribute('novalidate','novalidate');
-
-	// Set it so the user gets redirected back down to the form upon form fail
-	//$this->setRedirectToFormOnValidationError(true);		
-	
-    
+		// Set it so the user gets redirected back down to the form upon form fail
+		//$this->setRedirectToFormOnValidationError(true);		
+		
+		
          
         parent::__construct($controller, $name, $fields, $actions, $required);
     }
@@ -93,10 +93,11 @@ class ContactForm extends Form{
 		
 	}
 	
-	
+	/*
 	public function forTemplate() {
 	    return $this->renderWith(array($this->class, 'Form'));
 	}
+	*/
 	
 		
 	
