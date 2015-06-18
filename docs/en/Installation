@@ -2,7 +2,7 @@
 
 Place this directory in the root of your SilverStripe installation. 
 
-Make sure it is named 'contact'
+Make sure it is named 'contactform'
 
 Rebuild your database (see below).
 

@@ -24,6 +24,7 @@ class ContactTemplateProvider implements TemplateGlobalProvider {
 		// return back the same variables as previously done in comments
 		return $template->process(new ArrayData(array(			
 			'AddContactForm'	=> $form,
+			'SuccessMessage'	=> $controller->SuccessMessage()
 		)));	  
       
       

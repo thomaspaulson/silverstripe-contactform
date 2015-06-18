@@ -1,6 +1,6 @@
 <% if $SuccessMessage %>
   $SuccessMessage
-<% else %>
+<% else%>
   $AddContactForm
 <% end_if %>
 

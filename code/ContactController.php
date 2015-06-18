@@ -45,4 +45,16 @@ class ContactController extends Controller {
 		return $form;
 	      
 	}
+
+	public function SuccessMessage(){
+	  
+	  if(Session::get('MailSent')){
+  		$config = SiteConfig::current_site_config();
+		$message = $config->SubmitText;
+		Session::clear('MailSent');   		
+		return $message;
+	  }	  
+	  return null;
+	  
+	}
 }

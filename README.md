@@ -18,7 +18,7 @@ inside the docs folder.
 
 ### Manual directory placement
 Place this directory in the root of your SilverStripe installation.
-Make sure it is named 'contact'
+Make sure it is named 'contactform'
 Rebuild your database (see below).
 ## Rebuild database
 Visit http://www.yoursite.com/dev/build/ in your browser
