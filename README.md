@@ -26,15 +26,3 @@ Visit http://www.yoursite.com/dev/build/ in your browser
 ##  to view contact form
 Insert $ContactForm placeholder in templates to show the contact form, also flush the cache http://www.yoursite.com/?flush=all in your browser
 
-
-
-
-## Reference
-i got the idea to create contactform on sidebar, from the below 
-
-
-https://github.com/silverstripe/silverstripe-comments
-
-https://github.com/dnadesign/silverstripe-menumanager	
-
-thanks to wilr ( https://github.com/wilr )
